@@ -62,9 +62,10 @@
 /* #define TEST_BUFFER */
 
 /* SEE https://github.com/tommyjlong/app_rtsp_sip/issues/5#issuecomment-1229562427 */
-/* Uncomment the next 2 lines if compiling on ARM */
+/* Uncomment the next 3 lines if compiling on ARM */
 #define PJ_IS_BIG_ENDIAN 0
 #define PJ_IS_LITTLE_ENDIAN 1
+#define PJ_AUTOCONF 1
 
 #include <asterisk.h>
 #include "asterisk/app.h" /* PORT 17.3 ADDed for parsing args */
