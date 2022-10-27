@@ -120,7 +120,6 @@ RUN cp --verbose ../asterisk-opus*/codecs/* codecs; \
     patch -p1 < ../asterisk-opus*/asterisk.patch
 
 ## Install app_rtsp_sip
-ARG TARGETARCH
 WORKDIR /usr/src/asterisk
 COPY patches/rtsp_sip_links.sh /usr/src/asterisk
 RUN /usr/src/asterisk/rtsp_sip_links.sh
